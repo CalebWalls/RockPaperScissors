@@ -1,0 +1,15 @@
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\bin\Debug\net6.0\RockPS.exe
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\bin\Debug\net6.0\RockPS.deps.json
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\bin\Debug\net6.0\RockPS.runtimeconfig.json
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\bin\Debug\net6.0\RockPS.dll
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\bin\Debug\net6.0\RockPS.pdb
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\obj\Debug\net6.0\RockPS.csproj.AssemblyReference.cache
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\obj\Debug\net6.0\RockPS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\obj\Debug\net6.0\RockPS.AssemblyInfoInputs.cache
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\obj\Debug\net6.0\RockPS.AssemblyInfo.cs
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\obj\Debug\net6.0\RockPS.csproj.CoreCompileInputs.cache
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\obj\Debug\net6.0\RockPS.dll
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\obj\Debug\net6.0\refint\RockPS.dll
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\obj\Debug\net6.0\RockPS.pdb
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\obj\Debug\net6.0\RockPS.genruntimeconfig.cache
+C:\Users\caleb.walls\RockPaperScissor\src\RockPS\obj\Debug\net6.0\ref\RockPS.dll
