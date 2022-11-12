@@ -27,6 +27,19 @@ static void Main(string[] args)
 
     //Get the users input
     var tempchoice = Console.ReadLine();
+
+
+    //create a variable called isAstring
+    bool isAstring = false;
+    //if the value is able to be created into a number then isAstring will be true otherwise it will be false
+    int tempNum;
+    isAstring = int.TryParse(tempchoice,out tempNum);
+
+    //if isAstring returns false then break out of loop
+    if(!isAstring)
+    {
+      break;
+    }
     //Need input validation later a throw and catch statement
     /*
     ............
@@ -44,7 +57,7 @@ static void Main(string[] args)
 
 //Determine what the user choice is and store it
  userWeapon = Weapobj.DetermineWeapon(choice);
-Console.WriteLine($"Computer Chose:{userWeapon}");
+Console.WriteLine($"User Chose:{userWeapon}");
 
 //Then I want the computer to choose a weapon
 Random rmd = new Random();
