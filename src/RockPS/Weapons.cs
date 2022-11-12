@@ -9,7 +9,7 @@ namespace RockPS
 
     public class Weapon
     {
-        //This is where weapon is defined
+        //This is where weapons will be chosen by the user and the computer
         public string DetermineWeapon(int choice)
         {
             //Initalized my weapons in an array
@@ -96,11 +96,11 @@ if(computerWeap == "Paper" && userWeap == "Scissors")
 }
 if(computerWeap == "Rock" && userWeap == "Paper")
 {
-    Console.WriteLine("YOU WIN");
+    Console.WriteLine("YOU WIN!!");
 }
 if(computerWeap == "Scissors" && userWeap == "Rock")
 {
-    Console.WriteLine("YOU WIN");
+    Console.WriteLine("YOU WIN!!");
 }
 
 

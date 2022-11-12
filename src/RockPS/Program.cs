@@ -1,6 +1,9 @@
-﻿/*Create a rock paper scissor games that takes user input
-  and does then based on the input prints out a random RPC
-  and then chooses a winnder based on results.*/
+﻿/*Author:Caleb Walls
+  Date: 11/11/2022 (Code is bug free and crash free)
+  Description: Create a rock paper scissor game that takes user inputand then  
+  prints out a random value being Rock, Paper, or Scissors by the Computer.
+  Then chooses a winner based on results.
+  */
 using System;
 using System.Collections.Generic;
 
@@ -20,72 +23,69 @@ class Program
 
 static void Main(string[] args)
 {
-    string userWeapon = "";
-    while(userWeapon != "invalid"){
+    //Created a temporary choice so it can be validated later on
+    string tempchoice = "";
+
+
+    //While the input is not 4 we will always cycle throught the loop
+    while(tempchoice != "4")
+    {
+    
     //First I want the user to choose a weapon
-    Console.WriteLine("User Choose Your Weapon: 1.Rock, 2.Paper, or 3.Scissors");
-
-    //Get the users input
-    var tempchoice = Console.ReadLine();
+    Console.WriteLine("User Choose Your Weapon: \n 1.Rock\n 2.Paper\n 3.Scissors\n To Quit type 4");
 
 
-    //create a variable called isAstring
-    bool isAstring = false;
-    //if the value is able to be created into a number then isAstring will be true otherwise it will be false
-    int tempNum;
-    isAstring = int.TryParse(tempchoice,out tempNum);
+    //Get the users input and validates it is only a number 1-3
+    tempchoice = Console.ReadLine();
+    var check = new Checks();
+    bool validation = check.inputValidation(tempchoice);
 
-    //if isAstring returns false then break out of loop
-    if(!isAstring)
-    {
-      break;
-    }
-    //Need input validation later a throw and catch statement
-    /*
-    ............
-    */
-    var choice = int.Parse(tempchoice);
-    if((choice > 3 || choice < 1) )
-    {
-        break;
-    }
 
-//create a weapon object
- var Weapobj = new Weapon();
+//if the choice is 4 we exit
+  if(tempchoice == "4")
+  {
+    break;
+  }
+
+
+//if validation fails we continue and ask the user to re-enter a value
+  if(validation == false)
+  {
+    Console.WriteLine($"Invalid Input: {tempchoice}. Please Re-enter and try again.");
+    continue;
+  }
+
+
+ //As long as validation passes then we are safe to convert the nuumber to an int and proceed   
+var choice = int.Parse(tempchoice);
+
+//create a new weapon object
+var Weapobj = new Weapon();
 
 
 
 //Determine what the user choice is and store it
- userWeapon = Weapobj.DetermineWeapon(choice);
-Console.WriteLine($"User Chose:{userWeapon}");
+var userWeapon = Weapobj.DetermineWeapon(choice);
+Console.WriteLine($"\nUser Chose:{userWeapon}");
 
-//Then I want the computer to choose a weapon
+
+//Create a new Random object
 Random rmd = new Random();
+//Let the computer pick a random number between 1 and 3 to pick it's weapon.
 var computerChoice = rmd.Next(1,4);
 var computerWeapon = Weapobj.DetermineWeapon(computerChoice);
 Console.WriteLine($"Computer Chose:{computerWeapon}");
 
     
 
-    //Then I want the program to pick a winner
-  Weapobj.PickWinnder(computerWeapon,userWeapon);
+//Program picks a winner based on results
+Weapobj.PickWinnder(computerWeapon,userWeapon);
+Console.WriteLine("\n");
 
    
     }
 
-
-
-
-
-
-
-
 }
-
-
 }
-
-
-
 }
 
